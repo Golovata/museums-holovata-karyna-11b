@@ -1,0 +1,158 @@
+body {
+    background-color: #fafafa;
+    margin: 0px;
+    color: rgb(14, 14, 14);
+    font-family: Tahoma;
+    min-width: 300px;
+}
+
+.nav {
+    width: 100%;
+    padding: 15px;
+    min-width: 300px;
+    text-align: center;
+    position: fixed;
+    top: 0px;
+    background-color: rgb(255, 255, 255);
+    z-index: 9;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    background-image: url(../source/logo.png);
+    background-size: cover;
+}
+.name {
+    font-size: 20px;
+    font-weight: 800;
+    margin-left: 60px;
+    position: absolute;
+    top:22px;
+}
+.burger {
+    position: absolute;
+    right: 0;
+    top: 0px;
+    width: 40px;
+    height: 40px;
+    margin: 15px 35px 0px 0px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../source/menu.png);
+    cursor: pointer;
+    display: block;
+}
+
+input[type="checkbox"]  {
+    display: none;
+}
+
+input + .burger + div {
+    display: none;
+}
+
+input:checked + .burger + div {
+    display: block;
+}
+.menu {
+    text-align: right;
+    position: absolute;
+    width: 200px;
+    right: 0;
+    top: 57px;
+    padding: 30px 30px 30px 0px;
+    display: none;
+    background-color: rgb(255, 255, 255);
+    height: auto;
+}
+.menu-item {
+    margin-right: 20px;
+}
+.menu-item a, .nav a {
+    text-decoration: none;
+    color: rgb(14, 14, 14);
+}
+.content {
+    position: relative;
+    top: 80px;
+    margin: 30px auto 110px auto;
+    width: 90%;
+}
+.title-photo {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100px;
+    border-radius: 15px 15px 0 0;
+}
+.header {
+    background-color: rgb(248,224,88);
+    padding: 5px 0;
+    position: relative;
+    top: 53px;
+}
+.header h1{
+    font-size: 16px;
+    text-align: center;
+    margin: 0px;
+}
+.description {
+    margin-top: 30px;
+    font-size: 14px;
+    text-align: justify;
+}
+.location{
+    margin-bottom: 30px;
+}
+.location p {
+    margin-top: 5px;
+    font-size: 12px;
+    text-align: center;
+}
+.description p {
+    margin-bottom: 0%;
+    line-height: 1.5;
+}
+.vid, .map{
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin: 30px auto 0 auto;
+}
+.vid iframe, .map iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.gallery{
+    display: flex;
+	flex-wrap: wrap;
+    padding: 10px;
+}
+.gallery-item {
+    height: 80px;
+    flex: 1 0 30%;
+	margin: 1.5%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: block;
+    transition: transform 400ms ease-out;
+}
+.gallery-item:hover {
+    transform: scale(1.1);
+}
+.museum-insta {
+    height: 30px;
+    width: 30px;
+    margin: 20px auto 0px auto;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../source/inst.png);
+    cursor: pointer;
+}
